@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:500,600,700);
+
+:root {
+    --primary-color: #25344f;
+    --secondary-color: #23a6f0;
+    --neutral-color: #ffffff;
+    --logo-color: #ff0000;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0; border: 0; margin: 0;
+    text-transform: none;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    transition: all .3s ease-out 0s;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--neutral-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn span {
+    padding: .3rem .5rem;
+    /* border-radius: .5rem; */
+    /* background-color: var(--primary-color); */
+    color: var(--neutral-color);
+    margin-left: .5rem;
+}
+
+.btn:hover span {
+    margin-left: 1.5rem;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo span {
+    color: var(--logo-color);
+}
+
+.logo i {
+    color: var(--secondary-color);
+
+}
+
+li, a {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--neutral-color);
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.nav__links li a:hover {
+    color: var(--secondary-color);
+}
+
+.sub-menu {
+    display: none;
+}
+
+.navbar .nav__links li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+.navbar .nav__links li:hover .sub-menu ul {
+    display: block;
+    position: absolute;
+    margin: 2rem;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: auto;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .4);
+}
+
+.navbar .nav__links li:hover .sub-menu ul li {
+    width: 17rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: left;
+    border-bottom: .1rem dashed var(--neutral-color);
+}
+
+.navbar .nav__links li:hover .sub-menu ul li:active {
+    background-color: var(--secondary-color);
+
+}
+
+.navbar .nav__links li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.navbar .nav__links li:hover .sub-menu ul li a:hover {
+    color: var(--primary-color);
+}
