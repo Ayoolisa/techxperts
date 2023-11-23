@@ -16,38 +16,131 @@
 </head>
 <body>
 
+    <!-- header section starts here  -->
+
     <header class="header">
           
-        <!-- <img src="./images/logo.png" alt="" class="logo"> -->
         <a href="index.html" class="logo">Tech<span>Xpert</span> <i class="fas fa-rocket"></i> </a>
 
         <nav class="navbar">
             <ul class="nav__links">
-                <li><a href="#hero">home</a></li>
-                <li><a href="#services">services</a>
-                    <div class="sub-menu">
-                        <ul>
-                            <li><a href="#services">web development</a></li>
-                            <li><a href="#services">app development</a></li>
-                            <li><a href="#services">digital marketing</a></li>
-                        </ul>
-                    </div>
+                <li class="nav__link">
+                    <a href="#hero">home</a>
                 </li>
-                <li><a href="#pricing">pricing</a>
-                    <div class="sub-menu">
-                    <ul>
+                <li class="nav__link">
+                    <a href="#services">services
+                        <span class="icon dropdown__icon fas fa-sort-desc"></span>  
+                    </a>               
+                        <ul class="drop__down">
+                        <li><a href="#services">web development</a></li>
+                        <li><a href="#services">app development</a></li>
+                        <li><a href="#services">digital marketing</a></li>
+                    </ul>
+                </li>
+                <li class="nav__link">
+                    <a href="#pricing">pricing
+                        <span class="icon dropdown__icon fas fa-sort-desc"></span>                
+                    </a>
+                    <ul class="drop__down">
                         <li><a href="#pricing">basic</a></li>
                         <li><a href="#pricing">intermediate</a></li>
                         <li><a href="#pricing">professional</a></li>
-                    </div>
+                    </ul>
                 </li>
-                <li><a href="#about">about us</a></li>
+                <li class="nav__link">
+                    <a href="#about us">about us</a>
+                </li>
             </ul>
-
         </nav>
         <a href="#contact" class="btn">contact us <span class="fas fa-long-arrow-right"></span></a>
 
-    </header>
+    </header> 
+    <!-- header section ends here  -->
+
+
+    <!-- hero section starts here  -->
+
+    <section class="hero" id="hero">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>we create websites that help you
+                        achieve your business goals.
+                    </h1>
+                    <p>we build simple, modern websites that help you reach more
+                        customers <br> and grow your business.
+                    </p>
+                    <input type="email" name="email" id="email" placeholder="enter your email address">
+                    <button type="submit" class="btn">contact us <span class="fas fa-long-arrow-right"></span></button>
+                </div>
+                <div class="col-22">
+                    <img src="./images/facial-recognition-collage-concept.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero section ends here  -->
+
+    <!-- services section starts here  -->
+
+    <section class="services" id="services">
+        <h1 class="heading">what we do?</h1>
+        <p>
+            At TechXperts firm, we are a passionate team of web design experts dedicated to crafting 
+            visually captivating and user-centric websites. We leverage cutting-edge technologies 
+            to optimize your website for seamless performance across all devices. Our mission is 
+            to create websites that not only look great but also function flawlessly, providing 
+            an exceptional user experience that drives engagement and fosters brand loyalty.
+        </p>
+
+        <div class="service-container">
+            <div class="service-row">
+                <img src="./images/web-programming.png" alt="">
+                <h3>web development</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dicta! Autem, possimus.
+                </p>
+                <a href="#" class="btn learn__more">learn more <span class="fas fa-long-arrow-right"></span></a>
+            </div>
+            <div class="service-row">
+                <img src="./images/mobile-app.png" alt="">
+                <h3>app development</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dicta! Autem, possimus.
+                </p>
+                <a href="#" class="btn learn__more">learn more <span class="fas fa-long-arrow-right"></span></a>
+            </div>
+            <div class="service-row">
+                <img src="./images/digital-marketing.png" alt="">
+                <h3>digital marketing</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dicta! Autem, possimus.
+                </p>
+                <a href="#" class="btn learn__more">learn more <span class="fas fa-long-arrow-right"></span></a>
+            </div>
+        </div>
+        
+    </section>
+    <!-- services section ends here  -->
+
+    <!-- tools section starts here  -->
+
+    <section class="tools">
+
+        <h1 class="heading">tools we use</h1>
+        <div class="img-logos">
+            <img src="./images/wordpress.png" alt="">
+            <img src="./images/figma.png" alt="">
+            <img src="./images/photoshop.png" alt="">
+            <img src="./images/illustrator.png" alt="">
+            <img src="./images/woocommerce.png" alt="">
+        </div>
+        
+    </section>
+    <!-- tools section ends here  -->
+
 
 
 
