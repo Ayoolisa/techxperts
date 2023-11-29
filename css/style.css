@@ -464,8 +464,8 @@ li, a {
 /* workflow__process section  */
 .workflow__process {
     align-items: center;
-    margin-top: 4rem;
     background: var(--primary-color);
+    height: 100vh;
 }
 
 .workflow__row {    
@@ -500,7 +500,6 @@ li, a {
     padding: 3rem 4rem;
     margin: 3rem 2% 1rem 0;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);  
-    backdrop-filter: blur(11rem);
 }
 
 .workflow__step__number {
@@ -524,7 +523,6 @@ li, a {
     display: flex;
     flex-flow: wrap;
     background-color: var(--neutral-color);
-    margin-top: 4rem;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -534,6 +532,7 @@ li, a {
     font-size: 4rem;
     color: var(--primary-color);
     font-weight: 100;
+    margin-top: 2rem;
 }
 
 .benefits h3 span {
@@ -566,7 +565,6 @@ li, a {
     padding: 2rem 10%;
     margin: 2rem 2rem;
     border-radius: 1rem;
-    backdrop-filter: blur(1rem);
     transition: all .3s ease;
 }
 
